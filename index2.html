@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="login-details" class="bg-orange-400 p-4 mt-20 m-12">
+    <h1 class="text-5xl text-center"><span class="text-sky-800 hover:text-violet-600">Let's get some</span> <span class="font-semi-bold text-violet-600">Money</span></h1>
+    </div>
+    <main>
+        <div>
+            <section class="flex flex-row">
+                <div  class="bg-green-300 mx-auto w-30% p-3 text-2xl rounded-md">
+                    <p id="deposit-message" class="text-white text-center"></p>
+                    <div>Deposited amount</div>
+                    <p class="text-center text-4xl text-white">$<span id="deposit-update">00</span>
+                    </p>
+                </div>
+            <div  class="bg-red-300 mx-auto w-30% p-3 text-2xl rounded-md">
+                <p id="withdraw-message" class="text-white text-center"></p>
+                <div>Withdrawal amount</div>
+                <p class="text-center text-4xl text-white">$<span id="withdraw-update">00</span>
+                </p>
+            </div>
+            <div class="bg-yellow-400 mx-auto w-30% p-4 text-2xl rounded-lg">
+                <div class="font-bold text-3xl">Total Amount</div>
+                <p class="text-center text-4xl text-white font-bold">$<span  id="total-amount" >00</span>
+                </p>
+            </div>
+            </section>
+            <section class="flex flex-col mx-auto w-9/12 mt-20">
+                <div>
+                    <input id="deposit-field" class="p-10 w-9/12 bg-green-100 hover:bg-green-200 text-2xl m-3" type="text" name="" placeholder="Amount you want to deposit">
+                    <button id="deposit-button" class="p-1 w-1/12 bg-green-400 hover:bg-green-600 text-2xl m-3 text-white rounded-lg" type="submit">Submit</button>
+                </div>
+                <div>
+                    <input id="withdraw-field" class="p-10 w-9/12 bg-red-100 hover:bg-red-200 text-2xl m-3" type="text" name="" placeholder="Amount you want to withdraw">
+                    <button id="withdraw-button" type="submit" class="p-1 w-1/12 bg-red-400 hover:bg-red-600 text-2xl m-3 text-white rounded-lg">Submit</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
